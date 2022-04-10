@@ -19656,6 +19656,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1434695618}
     - target: {fileID: 8999189282066953459, guid: c9c56fe09b5aeae4a8d505f5d598d84e, type: 3}
+      propertyPath: autoCreatePlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8999189282066953459, guid: c9c56fe09b5aeae4a8d505f5d598d84e, type: 3}
       propertyPath: serverListContainer
       value: 
       objectReference: {fileID: 969522890}
