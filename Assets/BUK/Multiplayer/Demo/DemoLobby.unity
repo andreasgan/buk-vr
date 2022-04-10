@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.159
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05602813, g: 0.11514569, b: 0.15238434, a: 0.159}
+  m_IndirectSpecularColor: {r: 0.05623982, g: 0.11498136, b: 0.15149656, a: 0.159}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5634,6 +5634,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 888083133}
   - {fileID: 936395937}
@@ -13077,6 +13078,7 @@ Transform:
   m_LocalRotation: {x: -0.041824576, y: -0.7058688, z: -0.041824583, w: 0.7058688}
   m_LocalPosition: {x: 13.426, y: 1.967, z: 0.609}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -13170,6 +13172,7 @@ Transform:
   m_LocalRotation: {x: -0.6181645, y: 0.3667311, z: 0.09035064, w: -0.6893604}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -19560,6 +19563,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8719770176048388354, guid: c9c56fe09b5aeae4a8d505f5d598d84e, type: 3}
+      propertyPath: statisticsGUI
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8719770176048388355, guid: c9c56fe09b5aeae4a8d505f5d598d84e, type: 3}
       propertyPath: m_Name
       value: BukNetworkManager
@@ -19622,7 +19629,7 @@ PrefabInstance:
       objectReference: {fileID: 1646000870}
     - target: {fileID: 8999189282066953459, guid: c9c56fe09b5aeae4a8d505f5d598d84e, type: 3}
       propertyPath: onlineScene
-      value: Assets/BUK/Multiplayer/Demo/DemoOnline.unity
+      value: Assets/BUK/Multiplayer/Demo/DemoOnline 1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 8999189282066953459, guid: c9c56fe09b5aeae4a8d505f5d598d84e, type: 3}
       propertyPath: offlineScene
