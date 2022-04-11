@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using Buk.PhysicsLogic.Interfaces;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,6 +12,8 @@ namespace Buk.PhysicsLogic.Implementation
     public GameObject bulletType;
     public InputAction trigger;
     public bool inputEnabled;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     // How fast the bullet is launched
     public float muzzleVelocity = 10.0f;
     // Seconds before you can shoot a new bullet.
@@ -50,6 +54,7 @@ namespace Buk.PhysicsLogic.Implementation
         // If the time since the last shot is less than the cooldown, we can't shoot yet. Do nothing.
         return;
       }
+      audioSource.PlayOneShot(audioClip);
       // Create a new copy of bulletType using the gun's position and rotation.
       Instantiate(bulletType, transform.position, transform.rotation)
         // Get the Rigidbody of that bullet, so that we can apply physics to it.

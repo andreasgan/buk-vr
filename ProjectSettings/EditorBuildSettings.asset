@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BUK/Scenes/6DOF/6DOFOnline.unity
     guid: 738244f7a97fa92418a65bfccf7005d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/BUK/Multiplayer/Demo/DemoOnline 1.unity
     guid: e7a72d8a23b45457a864a36afb3e7741
   - enabled: 1
