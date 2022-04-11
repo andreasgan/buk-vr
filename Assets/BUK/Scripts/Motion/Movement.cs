@@ -80,7 +80,7 @@ namespace Buk.Motion
       float num_z = Random.Range(-4, 9);
 
       pos_y = gameObject.transform.position.y;
-      if (pos_y < -1)
+      if (pos_y < 2)
       {
         gameObject.transform.position = new Vector3(num_x, 20, num_z);
       }
