@@ -82,7 +82,7 @@ namespace Buk.Motion
       pos_y = gameObject.transform.position.y;
       if (pos_y < -1)
       {
-        gameObject.transform.position = new Vector3(num_x, 1, num_z);
+        gameObject.transform.position = new Vector3(num_x, 20, num_z);
       }
     }
 
