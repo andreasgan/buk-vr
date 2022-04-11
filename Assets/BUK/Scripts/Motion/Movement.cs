@@ -76,10 +76,13 @@ namespace Buk.Motion
 
     public void OnCollisionEnter()
     {
+      float num_x = Random.Range(-3, 10);
+      float num_z = Random.Range(-4, 9);
+
       pos_y = gameObject.transform.position.y;
       if (pos_y < -1)
       {
-        gameObject.transform.position = new Vector3(0, 1, 0);
+        gameObject.transform.position = new Vector3(num_x, 1, num_z);
       }
     }
 

@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BUK/Multiplayer/Demo/DemoOnline 1.unity
     guid: e7a72d8a23b45457a864a36afb3e7741
+  - enabled: 1
+    path: Assets/BUK/Multiplayer/Demo/attack.unity
+    guid: 3d43194c756c54d5e843236ba7a03921
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6496f0fb7715743e18ac1cad4b3a526e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f509293a0aa837ccebd7864cdd938a10, type: 2}
