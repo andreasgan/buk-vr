@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.159
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05623982, g: 0.11498136, b: 0.15149656, a: 0.159}
+  m_IndirectSpecularColor: {r: 0.056020066, g: 0.11515885, b: 0.15227188, a: 0.159}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16085,6 +16085,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1773180650741766302, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773180650741766302, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773180650741766302, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773180650741766302, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1773180651443833345, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -16096,6 +16112,22 @@ PrefabInstance:
     - target: {fileID: 1773180651443833345, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Buk.Multiplayer.BioNetworkManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773180651484123451, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773180651484123451, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773180651484123451, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773180651484123451, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1773180651644768814, guid: d1a1e0f4e56eee94ab8b9e07b07056d6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -19629,7 +19661,7 @@ PrefabInstance:
       objectReference: {fileID: 1646000870}
     - target: {fileID: 8999189282066953459, guid: c9c56fe09b5aeae4a8d505f5d598d84e, type: 3}
       propertyPath: onlineScene
-      value: Assets/BUK/Multiplayer/Demo/DemoOnline 1.unity
+      value: Assets/BUK/Multiplayer/Demo/attack.unity
       objectReference: {fileID: 0}
     - target: {fileID: 8999189282066953459, guid: c9c56fe09b5aeae4a8d505f5d598d84e, type: 3}
       propertyPath: offlineScene

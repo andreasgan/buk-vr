@@ -26,6 +26,8 @@ namespace Buk.Motion
     private Rigidbody body;
     private bool onGround = false;
 
+    private float pos_y = 0;
+
     public void Awake()
     {
       collider = GetComponent<CapsuleCollider>();
@@ -56,6 +58,7 @@ namespace Buk.Motion
       // Rotate character in VR using controller, this value is always zero if using mouse look on the PC.
       var rotation = rotate?.ReadValue<float>() ?? 0;
       var movement = move?.ReadValue<Vector2>() ?? Vector2.zero;
+
       // Must be on the ground
       if (true || onGround)
       {
@@ -68,6 +71,15 @@ namespace Buk.Motion
         if (xzVelocity.magnitude > maxVelocity) {
           body.velocity = xzVelocity.normalized * maxVelocity + yVelocity;
         }
+      }
+    }
+
+    public void OnCollisionEnter()
+    {
+      pos_y = gameObject.transform.position.y;
+      if (pos_y < -1)
+      {
+        gameObject.transform.position = new Vector3(0, 1, 0);
       }
     }
 
