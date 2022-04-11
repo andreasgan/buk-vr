@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using Buk.PhysicsLogic.Interfaces;
@@ -7,8 +8,11 @@ using UnityEngine.InputSystem;
 
 namespace Buk.PhysicsLogic.Implementation
 {
+
   public class PhysicsGun : MonoBehaviour, IGun
   {
+    public int bulletKillDelay = 2; //This implies a delay of 2 seconds.
+ 
     public GameObject bulletType;
     public InputAction trigger;
     public bool inputEnabled;
@@ -56,11 +60,19 @@ namespace Buk.PhysicsLogic.Implementation
       }
       audioSource.PlayOneShot(audioClip);
       // Create a new copy of bulletType using the gun's position and rotation.
-      Instantiate(bulletType, transform.position, transform.rotation)
+      GameObject bulletRef = Instantiate(bulletType, transform.position, transform.rotation) as GameObject;
         // Get the Rigidbody of that bullet, so that we can apply physics to it.
-        .GetComponent<Rigidbody>()
+      bulletRef.GetComponent<Rigidbody>()
         // Apply velocity to the bullet's body, relative to its current position and rotation
         .AddRelativeForce(0f, muzzleVelocity, 0f, ForceMode.VelocityChange);
+      
+      DestroyItForMe(bulletRef);
+    }
+
+    private async void DestroyItForMe(GameObject ObjRef)
+    {
+      await Task.Delay(bulletKillDelay*1000);
+      Destroy(ObjRef);
     }
 
     public void OnDestroy()
