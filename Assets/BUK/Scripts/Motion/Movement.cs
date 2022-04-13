@@ -27,6 +27,7 @@ namespace Buk.Motion
     private bool onGround = false;
 
     private float pos_y = 0;
+    public int scoreValue = 5;
 
     public void Awake()
     {
@@ -82,6 +83,7 @@ namespace Buk.Motion
       pos_y = gameObject.transform.position.y;
       if (pos_y < 2)
       {
+      	scoreValue -= 1;
         gameObject.transform.position = new Vector3(num_x, 20, num_z);
       }
     }
