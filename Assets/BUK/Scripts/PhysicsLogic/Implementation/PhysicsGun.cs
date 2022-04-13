@@ -72,7 +72,7 @@ namespace Buk.PhysicsLogic.Implementation
     private async void DestroyItForMe(GameObject ObjRef)
     {
       await Task.Delay(bulletKillDelay*1000);
-      Destroy(ObjRef);
+      DestroyImmediate(ObjRef);
     }
 
     public void OnDestroy()
